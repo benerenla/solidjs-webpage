@@ -9,6 +9,11 @@ const Status : Component = () => {
         userId: "760499240966684683",
     });
     
+    if (!status().activities) {
+        return (
+            <h1>Not Activity</h1>
+        )
+    } 
 
     return (
         <div class="flex">
