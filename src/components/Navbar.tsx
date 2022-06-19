@@ -2,7 +2,6 @@ import { Component, createSignal, Show } from "solid-js";
 import Status from './Status'
 import { AiOutlineMenu } from 'solid-icons/ai'
 import { IoCloseOutline } from 'solid-icons/io'
-import { SiAboutdotme } from 'solid-icons/si'
 import { FaSolidHome, FaSolidUserCircle} from 'solid-icons/fa'
 import Modal from "./Helper/Modal";
 import { Presence } from "@motionone/solid";

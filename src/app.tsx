@@ -1,11 +1,9 @@
 import { Component, createSignal, onMount, Show } from 'solid-js';
 import { Link, useRoutes, useLocation } from 'solid-app-router';
-import  Navbar from './components/Navbar'
 import { routes } from './routes';
 import Loading from './errors/Loading';
 
 const App: Component = () => {
-  const location = useLocation();
   const Route = useRoutes(routes);
   const [loading ,setLoading] = createSignal(true)
 

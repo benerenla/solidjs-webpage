@@ -1,7 +1,6 @@
 import { Component, Match, onMount, Show, Switch } from "solid-js";
 import { useLanyard } from "solid-use-lanyard";
 import { Motion } from "@motionone/solid";
-import { spring } from "motion";
 
 
 const Status : Component = () => {
