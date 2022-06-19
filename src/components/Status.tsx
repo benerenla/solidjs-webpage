@@ -2,10 +2,14 @@ import { Component, Match, onMount, Show, Switch } from "solid-js";
 import { useLanyard } from "solid-use-lanyard";
 import { Motion } from "@motionone/solid";
 
+
+
 const Status : Component = () => {
     const { status, loading } = useLanyard({
         userId: "760499240966684683",
-    })
+    });
+    
+
     return (
         <div class="flex">
            <Show 
@@ -13,19 +17,14 @@ const Status : Component = () => {
             fallback={<h1 class="text-lg text-white">Not Activity</h1>}
            >
             <Show 
-                when={status().activities[0].assets.large_image}
+                when={status()}
                 fallback={null}
             >
-                <Switch fallback={null}>
+                <Switch fallback={ <Motion.img hover={{ scale: 1.1 }} class="w-14 h-14 rounded-lg" src={`https://cdn.discordapp.com/app-assets/${status().activities[0].application_id}/${status().activities[0].assets.large_image}`} />}>
                     <Match
                     when={status().listening_to_spotify}
                     >
                       <Motion.img hover={{ rotate: 180 }} transition={{ duration: 1 }} class="w-14 h-14 rounded-lg" src={status().spotify.album_art_url} />
-                    </Match>
-                    <Match
-                    when={!status().listening_to_spotify}
-                    >
-                      <Motion.img hover={{ scale: 1.1 }} class="w-14 h-14 rounded-lg" src={`https://cdn.discordapp.com/app-assets/${status().activities[0].application_id}/${status().activities[0].assets.large_image}`} />
                     </Match>
                 </Switch>
             </Show>
