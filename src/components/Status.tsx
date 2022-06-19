@@ -12,7 +12,7 @@ const Status : Component = () => {
         <div class="flex">
            <Show 
             when={status()}
-            fallback={<h1>Not Activity</h1>}
+            fallback={<h1 class="text-lg text-white">Not Activity</h1>}
            >
             <Show 
                 when={status().activities[0].assets.large_image}
