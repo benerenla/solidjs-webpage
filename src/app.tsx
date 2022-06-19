@@ -10,7 +10,7 @@ const App: Component = () => {
   onMount(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 4500)
+    }, 4900)
   })
   return (
     <>
