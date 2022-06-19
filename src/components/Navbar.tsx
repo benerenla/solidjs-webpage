@@ -2,7 +2,6 @@ import { Component, createSignal, Show } from "solid-js";
 import Status from './Status'
 import { AiOutlineMenu } from 'solid-icons/ai'
 import { IoCloseOutline } from 'solid-icons/io'
-import { FaSolidHome, FaSolidUserCircle} from 'solid-icons/fa'
 import Modal from "./Helper/Modal";
 import { Presence } from "@motionone/solid";
 
@@ -33,8 +32,8 @@ const Navbar : Component= () => {
                 <div class="flex justify-between">
                     <div class="flex flex-col px-4 py-8 w-[15rem]">
                         <h1 class="text-dark-400 text-md mx-2 flex items-center">Pages</h1>
-                        <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition"><FaSolidHome class="mx-1 -my-4" size={18} color="#fffff"/> Home</a>
-                        <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition"><FaSolidUserCircle class="mx-1 -my-4" size={18} color="#fffff"/> About</a>
+                        <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition">Home</a>
+                        <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition">About</a>
 
                     </div>
                     <div class="w-full border-l-2 border-zinc-800 h-[434px]">

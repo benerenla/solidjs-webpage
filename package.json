@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "@motionone/solid": "^10.10.0",
+    "@solid-js/signal": "^1.0.2",
+    "babel-plugin-preval": "^5.1.0",
     "motion": "^10.10.0",
+    "preval.macro": "^5.0.0",
     "solid-app-router": "^0.3.3",
     "solid-icons": "^0.4.13",
     "solid-js": "^1.4.2",

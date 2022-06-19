@@ -2,7 +2,6 @@ import { Component, Match, onMount, Show, Switch } from "solid-js";
 import { useLanyard } from "solid-use-lanyard";
 import { Motion } from "@motionone/solid";
 
-
 const Status : Component = () => {
     const { status, loading } = useLanyard({
         userId: "760499240966684683",
