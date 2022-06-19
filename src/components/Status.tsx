@@ -8,12 +8,20 @@ const Status : Component = () => {
     const { status, loading } = useLanyard({
         userId: "760499240966684683",
     });
+    const NotActivity = () =>
+        {
+            return (
+                <h1></h1>
+            )
+        }
     
-    if (!status().activities) {
-        return (
-            <h1>Not Activity</h1>
-        )
-    } 
+    onMount(() => {
+        setTimeout(() => {
+            if  (!status().activities) {
+                NotActivity()
+            }
+        }, 1000)
+    })
 
     return (
         <div class="flex">
