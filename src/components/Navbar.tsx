@@ -14,7 +14,7 @@ const Navbar : Component= () => {
     return (
         <>
         <nav class="container mx-auto my-3 md:w-[75rem] hover:scale-105">
-            <div class="flex flex-col justify-between md:flex-row">
+            <div class="flex justify-between flex-row">
                 <div>
                     <Status />
                 </div>
@@ -33,14 +33,15 @@ const Navbar : Component= () => {
                     <div class="flex flex-col px-4 py-8 w-[15rem]">
                         <h1 class="text-dark-400 text-md mx-2 flex items-center">Pages</h1>
                         <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition">Home</a>
-                        <a href="/" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition">About</a>
+                        <a href="#about" class="text-md h-12 px-2 text-gray-300 flex items-center rounded-md my-1 text-center hover:bg-zinc-900/20 transition">About</a>
 
                     </div>
                     <div class="w-full border-l-2 border-zinc-800 h-[434px]">
                         <div class="w-full flex justify-end p-2">
                         <button onClick={close}><IoCloseOutline size={38} color="#ffffff"/></button>
                         </div>
-                        <h1 class="text-white text-xl text-center">Hello.</h1>
+                        <h1 class="text-white text-xl px-2">I'm Atlas.I'm Full Stack Developer 🔖</h1>
+                        <p class="text-gray-400 text-lg px-2 py-4">I'm Using <a class="text-blue-400" href="https://solidjs.com">Solid js</a>,<a class="text-red-400" href="https://windicss.com">Windi css</a> and <a class="text-purple-400" href="https://vite.com"> Vite.</a> </p>
                     </div>
                 </div>
             </Modal>

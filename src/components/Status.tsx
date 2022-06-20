@@ -8,11 +8,12 @@ const Status : Component = () => {
     const { status, loading } = useLanyard({
         userId: "760499240966684683",
     });
-    
 
     return (
         <div class="flex">
-           <Show 
+            {status() && 
+            (
+            <Show 
             when={status()?.activities.length >= 1}
             fallback={<h1 class="text-lg text-white">Not Activity</h1>}
            >
@@ -44,6 +45,8 @@ const Status : Component = () => {
             </Switch>
            </div>
            </Show>
+            )}
+           
         </div>
     )   
 }

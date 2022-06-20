@@ -4,7 +4,7 @@ import { JSX, Component } from 'solid-js'
 import { spring } from "motion";
 
 
-type ModalProps<P= {}> = P & {children?: JSX.Element,handleClose?: JSX.EventHandler<HTMLDivElement, MouseEvent>, width?:string, height?: string}
+type ModalProps<P = {}> = P & {children?: JSX.Element,handleClose?: JSX.EventHandler<HTMLDivElement, MouseEvent>, width?:string, height?: string}
 type ModalComponent<P = {}> = Component<ModalProps<P>>
 
 const dropIn = {
